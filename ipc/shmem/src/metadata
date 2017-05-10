@@ -1,0 +1,8 @@
+[Application]
+name=com.permissive.shmem
+runtime=org.gnome.Platform/x86_64/3.24
+sdk=org.gnome.Sdk/x86_64/3.24
+command=shmem.sh
+
+[Context]
+shared=ipc;

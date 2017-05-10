@@ -1,0 +1,8 @@
+[Application]
+name=com.permissive.socket
+runtime=iot.refkit.BasePlatform/x86_64/current
+sdk=iot.refkit.BaseSdk/x86_64/current
+command=socket.sh
+
+[Context]
+shared=network;

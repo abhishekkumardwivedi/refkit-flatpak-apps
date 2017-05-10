@@ -1,0 +1,8 @@
+[Application]
+name=com.permissive.zmq
+runtime=iot.refkit.BasePlatform/x86_64/current
+sdk=iot.refkit.BaseSdk/x86_64/current
+command=zmq.sh
+
+[Context]
+shared=network;
