@@ -46,3 +46,18 @@ flatpak build-update-repo --title="Flatpak sample apps"
 # Run an app ------
 flatpak run com.permissive.audio
 # refkit-flatpak-apps
+
+
+# Log output upon running socket app server and client
+`
+root      1334  0.0  0.0   4192  1180 pts/0    S+   05:35   0:00 /usr/libexec/flatpak-bwrap --args 10 recv
+root      1338  0.0  0.0   4192  1272 pts/0    S+   05:35   0:00 /usr/libexec/flatpak-bwrap --args 15 /usr/libexec/flatpak-dbus-proxy --fd=12 unix:path=/run/user/0/b
+root      1339  0.0  0.0 110936  1788 pts/0    Sl+  05:35   0:00 /usr/libexec/flatpak-dbus-proxy --fd=12 unix:path=/run/user/0/bus /run/user/0/.dbus-proxy/session-bu
+root      1341  0.0  0.0   4556  1428 pts/0    S+   05:35   0:00 /usr/libexec/flatpak-bwrap --args 10 recv
+root      1342 99.1  0.0   4160   716 pts/0    R+   05:35   1:19 recv
+root      1343  0.0  0.0   4192  1204 pts/1    S+   05:35   0:00 /usr/libexec/flatpak-bwrap --args 10 send
+root      1347  0.0  0.0   4192  1228 pts/1    S+   05:35   0:00 /usr/libexec/flatpak-bwrap --args 14 /usr/libexec/flatpak-dbus-proxy --fd=12 unix:path=/run/user/0/b
+root      1348  0.0  0.0 110936  1956 pts/1    Sl+  05:35   0:00 /usr/libexec/flatpak-dbus-proxy --fd=12 unix:path=/run/user/0/bus /run/user/0/.dbus-proxy/session-bu
+root      1350  0.0  0.0   4556  1496 pts/1    S+   05:35   0:00 /usr/libexec/flatpak-bwrap --args 10 send
+root      1351  0.0  0.0   4160   644 pts/1    S+   05:35   0:00 send
+`
