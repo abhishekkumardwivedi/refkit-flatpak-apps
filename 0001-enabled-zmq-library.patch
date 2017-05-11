@@ -1,0 +1,27 @@
+--- a/meta-refkit/conf/distro/include/refkit-supported-recipes.txt
++++ b/meta-refkit/conf/distro/include/refkit-supported-recipes.txt
+@@ -186,6 +186,7 @@ librealsense@librealsense
+ libsamplerate0@core
+ libsndfile1@core
+ libsocketcan@openembedded-layer
++libsodium@openembedded-layer
+ libsoup-2.4@core
+ libtheora@core
+ libtool@core
+@@ -308,4 +309,5 @@ wget@core
+ wic-tools@core
+ wpa-supplicant@core
+ xz@core
++zeromq@openembedded-layer
+ zlib@core
+
+--- a/meta-refkit/conf/local.conf.sample
++++ b/meta-refkit/conf/local.conf.sample
+@@ -315,3 +315,13 @@ PACKAGE_DEBUG_SPLIT_STYLE = "debug-without-src"
+ 
++REFKIT_IMAGE_EXTRA_INSTALL += "zeromq"
++# Pull in the configuration bits for enabling flatpak applications.
++require conf/distro/include/flatpak-applications.inc
+-- 
+2.7.4
+
