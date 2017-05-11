@@ -46,5 +46,3 @@ flatpak build-update-repo --title="Flatpak sample apps"
 # Run an app ------
 flatpak run com.permissive.audio
 # refkit-flatpak-apps
-# refkit-flatpak-apps
-# refkit-flatpak-apps

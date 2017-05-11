@@ -1,7 +1,7 @@
 [Application]
 name=com.permissive.shmem
-runtime=org.gnome.Platform/x86_64/3.24
-sdk=org.gnome.Sdk/x86_64/3.24
+runtime=iot.refkit.BasePlatform/x86_64/current
+sdk=iot.refkit.BaseSdk/x86_64/current
 command=shmem.sh
 
 [Context]
