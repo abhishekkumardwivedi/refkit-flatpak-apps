@@ -1,3 +1,20 @@
+# Create repo for flatpak app server
+
+flatpak build-finish socket/src
+flatpak build-finish audio/src
+flatpak build-finish ipc/shmem/src
+flatpak build-finish ipc/zmqbus/src
+
+flatpak build-export repo audio/src
+flatpak build-export repo socket/src
+flatpak build-export repo ipc/zmqbus/src
+flatpak build-export repo ipc/shmem/src
+
+* If we are accessing repo of apache2 server without defult configuration change for web content,
+then we can move repo to www folder with having root access
+
+sudo mv repo /var/www/html/
+
 # Getting target image, Runtime and SDK
 * Clone source file and compile
 `
